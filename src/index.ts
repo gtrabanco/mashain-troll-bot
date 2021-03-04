@@ -68,7 +68,7 @@ function onMessageHandler (target:any, context:any, msg:any, self:any) {
 
   // If the command is known, let's execute it
   if (commandName === '!troll') {
-    client.say(target, `!troll`);
+    setTimeout(()=> client.say(target, `!troll`), 1000);
     console.log(`* Executed ${commandName} command`);
   } else {
     console.log(`* Unknown command ${commandName}`);
